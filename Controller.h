@@ -42,6 +42,7 @@ class Controller final {
 
 		void showOneRegister(Register *reg); // Exibir um registro
 		void returnMenu(string message); //Função que retorna ao menu anterior e limpa a tela
+		bool isNumber(string text);
 
 		// Método de exibição da lista de registros
     	void display(Register *reg);

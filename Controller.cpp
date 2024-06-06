@@ -21,6 +21,7 @@
 
 using namespace std;
 constexpr const char* ERR_NOREGISTER = "Lista de registros vazia. O sistema ira retornar ao menu anterior.";
+constexpr const char* ERR_INT = "Valor informado deve ser apenas numeros. Tente novamente";
 constexpr const char* MSG_RETURN = "Para retornar clique no botao <Enter>";
 
 Controller::Controller(){
@@ -126,6 +127,15 @@ void Controller::returnMenu(string message){
 	system("cls");
 }
 
+bool Controller::isNumber(string text) {
+    for (char const &ch : text) {
+        if (!isdigit(ch)) {
+            return false;
+        }
+    }
+    return true;
+}
+
 
 
 void Controller::newRegister(void){
@@ -139,16 +149,25 @@ void Controller::newRegister(void){
 		getline(cin, name);
 
 		cout << "Ano de lancamento (AAAA) .......................................: ";
-		cin >> releaseYear;
-		cin.ignore(); 
+		getline(cin, entry);
+		if (isNumber(entry))
+			releaseYear = std::stoi(entry); // Converte a string para int
+		else
+			throw invalid_argument(ERR_INT);
 
 		cout << "Temporada (apenas numeros) .....................................: ";
-		cin >> season;
-		cin.ignore();
+		getline(cin, entry);
+		if (isNumber(entry))
+			season = std::stoi(entry);
+		else
+			throw invalid_argument(ERR_INT);
 
 		cout << "Quantidade de episodios (apenas numeros) .......................: ";
-		cin >> numEpisodes;
-		cin.ignore();
+		getline(cin, entry);
+		if (isNumber(entry))
+			numEpisodes = std::stoi(entry);
+		else
+			throw invalid_argument(ERR_INT);
 		
 		cout << "Atores principais (nomes separados por virgula) ................: ";
 		cin >> mainActors;
@@ -160,8 +179,11 @@ void Controller::newRegister(void){
 		cin >> network;
 
 		cout << "Classificacao (0-10) ...........................................: ";
-		cin >> rating;
-		cin.ignore();
+		getline(cin, entry);
+		if (isNumber(entry))
+			rating = std::stoi(entry);
+		else
+			throw invalid_argument(ERR_INT);
 
 		cout << "(S) para confirmar e (N) para cancelar: ";
 		getline(cin, entry);
@@ -236,15 +258,21 @@ void Controller::editRegister(void){
 					
 					cout << "Ano de lancamento (AAAA) ..............: " << endl;
 					getline(cin, entry);
-					releaseYear = (entry.empty()) ? oldRegister->getReleaseYear() : std::stoi(entry);
-
+					if (entry.empty()) releaseYear = oldRegister->getReleaseYear();
+					else if(isNumber(entry)) releaseYear = std::stoi(entry);
+					else throw invalid_argument(ERR_INT);
+					
 					cout << "Temporada (Apenas numeros) ............: " << endl;
 					getline(cin, entry);
-					season = (entry.empty()) ? oldRegister->getSeason() : std::stoi(entry);
+					if (entry.empty()) season = oldRegister->getSeason();
+					else if(isNumber(entry)) season = std::stoi(entry);
+					else throw invalid_argument(ERR_INT);
 
 					cout << "Numero de episodios (Apenas numeros) ..: " << endl;
 					getline(cin, entry);
-					numEpisodes = (entry.empty()) ? oldRegister->getNumEpisodes() : std::stoi(entry);
+					if (entry.empty()) numEpisodes = oldRegister->getNumEpisodes();
+					else if(isNumber(entry)) numEpisodes = std::stoi(entry);
+					else throw invalid_argument(ERR_INT);
 
 					cout << "Atores principais .....................: " << endl;
 					getline(cin, mainActors);
@@ -257,7 +285,9 @@ void Controller::editRegister(void){
 					
 					cout << "Classificacao (0-10) ..................: " << endl;
 					getline(cin, entry);
-					rating = (entry.empty()) ? oldRegister->getRating() : std::stoi(entry);
+					if (entry.empty()) rating = oldRegister->getRating();
+					else if(isNumber(entry)) rating = std::stoi(entry);
+					else throw invalid_argument(ERR_INT);
 
 					cout << "(S) para confirmar; (N) para cancelar: ";
 					getline(cin, entry);
