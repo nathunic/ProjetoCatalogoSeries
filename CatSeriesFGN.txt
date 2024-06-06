@@ -1,0 +1,25 @@
+Seja bem-vindo ao software de gerenciamento de series
+
+Este software foi criado para ajuda-lo a controlar o seu catalogo de series.
+
+1. Gestao do Catalogo de Series:
+   - O sistema contem as operacoes basicas de gerenciamento de dados, como incluir, recuperar (consultar), editar e excluir um registro.
+
+2. Opcoes de banco de dados:
+   - Banco de dados relacional: armazena os dados em um banco de dados relacional de forma persistente.
+   - Banco de dados simulado em memoria: realiza o armazenamento temporario de dados, apenas durante o tempo de execucao do software.
+
+3. Relatorios:
+   - Gere diversos relatorios para analisar os dados cadastrados.
+
+4. Dicas rapidas:
+   - Use o menu de navegacao para acessar diferentes secoes do software.
+
+5. Ajuda e suporte:
+   - Para qualquer assistencia ou duvida, entre em contato com nossa equipe.
+
+6. Saindo do Software:
+   - Saia do software com seguranca selecionando a opcao apropriada no menu (opcao 0).
+
+Obrigado por usar o software Catalogo de Series FGN!
+Fique a vontade para explorar suas funcionalidades.
