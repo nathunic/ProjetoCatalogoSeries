@@ -1,8 +1,8 @@
 /*
  * RegisterMemDAo.cpp
  *
- *  Created on: Mar 22, 2024
- *      Author: andre
+ *  Created on: Jun, 2024
+ *      Authors: fabio, guilherme, giovana, nathalia, nicolas
  */
 
 #include <algorithm>
@@ -18,7 +18,6 @@ RegisterMemDAO::RegisterMemDAO(MemoryDBConnection *memoryDBConnection) : memoryD
 }
 
 RegisterMemDAO::~RegisterMemDAO(){
-	// TODO Auto-generated destructor stub
 }
 
 
@@ -47,7 +46,6 @@ Register* RegisterMemDAO::getRegisterById(int registerId){
 
 
 void RegisterMemDAO::addRegister(Register *reg){
-	//reg->setRegisterId(++lastRegisterId);
 	(memoryDBConnection->getRegisterList()).push_back(reg);
 }
 

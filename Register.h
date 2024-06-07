@@ -1,8 +1,8 @@
 /*
  * User.h
  *
- *  Created on: Mar 22, 2024
- *      Author: andre
+ *  Created on: Jun, 2024
+ *      Author: guilherme
  */
 
 #ifndef USER_H_

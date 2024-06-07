@@ -2,7 +2,7 @@
  * Utils.cpp
  *
  *  Created on: Abr, 2024
- *      Author: Andre
+ *      Author: andre (houve uma pequena modificacao pelo grupo)
  */
 
 #include <iostream>
@@ -14,7 +14,6 @@
 #include "SystemInfo.h"
 
  void Utils::printMessage(string text){
-	//system("cls");
 	cout << "* " << text << " *" << "\n" << endl;
 }
 
@@ -34,7 +33,7 @@ string Utils::replicate(string text, int times){
 
 string Utils::formatString(string str, int width) {
     ostringstream oss;
-    oss << left << setw(width) << str;
+    oss << left << setw(width) << str; //manipula a formatação da string
     return oss.str();
 }
 

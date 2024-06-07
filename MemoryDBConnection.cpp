@@ -2,7 +2,7 @@
  * MemoryDBConnection.cpp
  *
  *  Created on: Mar 22, 2024
- *      Author: andre
+ *      Author: andre (houve uma pequena modificacao pelo grupo)
  */
 
 #include "MemoryDBConnection.h"

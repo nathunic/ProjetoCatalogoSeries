@@ -1,8 +1,8 @@
 /*
  * RegisterMemDAo.h
  *
- *  Created on: Mar 22, 2024
- *      Author: andre
+ *  Created on: Jun, 2024
+ *      Authors: fabio, guilherme, giovana, nathalia, nicolas
  */
 
 #ifndef REGISTERMEMDAO_H_

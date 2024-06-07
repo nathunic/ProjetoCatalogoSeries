@@ -50,5 +50,4 @@ string& TextFromFile::getFileName()
 
 TextFromFile::~TextFromFile()
 	{
-// TODO Auto-generated destructor stub
 	}

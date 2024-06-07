@@ -1,8 +1,8 @@
 /*
  * User.cpp
  *
- *  Created on: Mar 22, 2024
- *      Author: andre
+ *  Created on: Jun, 2024
+ *      Author: guilherme
  */
 
 #include "Register.h"
@@ -27,7 +27,6 @@ Register::Register(int registerId, string registerName, int releaseYear, int sea
 
 Register:: ~Register()
 {
-	// TODO Auto-generated destructor stub
 }
 
 int Register::getRegisterId() const

@@ -25,7 +25,7 @@ void Menu::setDecorator(const string &symbol, int width)
 	this->width = width;
 	}
 
-
+//Esse método valida qual o sistema operacional e executa o comando de limpar a tela correspondente
 void Menu::clearScreen(){
 	#if defined(_WIN32) || defined(_WIN64)
 		system("cls");

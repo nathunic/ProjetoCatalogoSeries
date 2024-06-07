@@ -1,8 +1,8 @@
 /*
  * Controller.h
  *
- *  Created on: Abr, 2024
- *      Author: XXXXX
+ *  Created on: Jun, 2024
+ *      Authors: fabio, guilherme, giovana, nathalia, nicolas
  */
 
 #ifndef CONTROLLER_H_

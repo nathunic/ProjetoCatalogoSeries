@@ -51,7 +51,8 @@ class Menu final
 		void setWidth(int width = 0);
 		bool isZeroForLastOpt() const;
 		void setZeroForLastOpt(bool zeroForLastOpt = true);
-		void clearScreen();
+
+		void clearScreen(); // método que limpa a tela
 	};
 
 #endif /* MENU_H_ */

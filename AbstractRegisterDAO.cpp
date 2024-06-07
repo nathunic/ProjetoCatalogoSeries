@@ -7,14 +7,9 @@
 
 #include "AbstractRegisterDAO.h"
 
-AbstractRegisterDAO::AbstractRegisterDAO()
-	{
-	// TODO Auto-generated constructor stub
+AbstractRegisterDAO::AbstractRegisterDAO(){
+}
 
-	}
-
-AbstractRegisterDAO::~AbstractRegisterDAO()
-	{
-	// TODO Auto-generated destructor stub
-	}
+AbstractRegisterDAO::~AbstractRegisterDAO(){
+}
 

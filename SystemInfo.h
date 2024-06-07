@@ -2,7 +2,7 @@
  * SysInfo.h
  *
  *  Created on: Abr, 2024
- *      Author: XXXXX
+ *      Author: andre
  */
 
 #ifndef SYSINFO_H_

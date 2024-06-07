@@ -2,7 +2,7 @@
  * Utils.h
  *
  *  Created on: Abr, 2024
- *      Author: XXXXX
+ *      Author: andre (houve uma pequena modificacao pelo grupo)
  */
 
 #ifndef UTILS_H_
@@ -17,6 +17,8 @@ class Utils final{
 		static void printMessage(string text);
 		static void printFramedMessage(string text, string symbol, int length);
 		static string replicate(string text, int times);
+
+		//Esses métodos definem a largura e a justificação dos valores
 		static string formatString(string str, int width);
 		static string formatInt(int num, int width);
 };

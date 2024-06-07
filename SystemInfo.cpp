@@ -2,7 +2,7 @@
  * SysInfo.cpp
  *
  *  Created on: Abr, 2024
- *      Author: XXXXX
+ *      Author: andre (houve uma pequena modificacao pelo grupo)
  */
 
 #include "SystemInfo.h"
